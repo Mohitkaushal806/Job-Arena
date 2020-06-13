@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design for Bootstrap</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .carders{
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+    .card_handler{
+      padding: 3%;
+    }
+    .manager_opp , .developer_opp , .secretary_opp , .accountant_opp , .security_opp{
+      height: 0px;
+      position: absolute;
+      width: 100%;
+      opacity: 0.9;
+      padding-top: 15%;
+      background-color: #212121;
+      display: none;
+      color: white;
+      animation-name: opp;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+      animation-fill-mode: forwards;
+    }
+    @keyframes opp{
+      from{height: 0px;}
+      to{height: 100%;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Start your project here-->  
+ <nav class="mb-1 navbar navbar-expand-lg navbar-dark elegant-color-dark" style="box-shadow: 0px 5px 0px #212121;">
+  <a class="navbar-brand" href="index.php">Job-Arena</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+    aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.php">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.php#jobs">Apply for Job</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Contact_us.php">Contact Us</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="opportunity.html">Opportunites</a>
+      </li>
+         </ul>
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a class="nav-link waves-effect waves-light">
+          <i class="fab fa-twitter twitter" ></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="row container-fluid carders">
+  <div class="col-lg-4 card_handler"><!-- Card -->
+<div class="card card-image"
+  style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+  <!-- Content -->
+  <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+    <div>
+      <h5 class="pink-text"><i class="fas fa-chart-pie"></i> Job Arena</h5>
+      <h3 class="card-title pt-2"><strong>Manager</strong></h3>
+      <p>A line manager is responsible for managing employees and resources to achieve specific functional or organizational goals. Some of these include: Recruiting and hiring talent to fill team positions. Providing coaching and performance feedback to all team members.</p>
+      <a class="btn btn-pink" onclick="open_opp('Manager')"><i class="fas fa-clone left"></i> Check Opportunity</a>
+    </div>
+  </div>
+<div class="manager_opp rgba-black-strong" onclick="close_opp('Manager')">
+      <ul>
+        <li>Employee relations manager.</li>
+        <li>Senior employment analyst.</li>
+        <li>Human resources director.</li>
+        <li>Management consultant.</li>
+        <li>Financial analyst.</li>
+        <li>Accountant.</li>
+      </ul>
+    </div>
+</div>
+<!-- Card --></div>
+  <div class="col-lg-4 card_handler"><!-- Card -->
+<div class="card card-image"
+  style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+  <!-- Content -->
+  <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+    <div>
+      <h5 class="pink-text"><i class="fas fa-chart-pie"></i> Job Arena</h5>
+      <h3 class="card-title pt-2"><strong>Security Expert</strong></h3>
+      <p> If a breach does occur, security analysts are often on the front line, leading efforts to counter the attack. Security analysts are also responsible for generating reports for IT administrators and business managers to evaluate the efficacy of the security policies in place.</p>
+      <a class="btn btn-pink" onclick="open_opp('Security')"><i class="fas fa-clone left"></i> Check Opportunity</a>
+    </div>
+  </div>
+<div class="security_opp rgba-black-strong" onclick="close_opp('Security')">
+      <ul>
+        <li>Employee relations manager.</li>
+        <li>Senior employment analyst.</li>
+        <li>Human resources director.</li>
+        <li>Management consultant.</li>
+        <li>Financial analyst.</li>
+        <li>Accountant.</li>
+      </ul>
+    </div>
+
+</div>
+<!-- Card --></div>
+  <div class="col-lg-4 card_handler"><!-- Card -->
+<div class="card card-image"
+  style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+  <!-- Content -->
+  <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+    <div>
+      <h5 class="pink-text"><i class="fas fa-chart-pie"></i>Job Arena</h5>
+      <h3 class="card-title pt-2"><strong>Developer</strong></h3>
+      <p>Becoming a software developer, also known as a computer programmer, you'll be playing a key role in the design, installation, testing and maintenance of software systems. The programs you create are likely to help businesses be more efficient and provide a better service.</p>
+      <a class="btn btn-pink" onclick="open_opp('Developer')"><i class="fas fa-clone left"></i> Check Opportunity</a>
+    </div>
+  </div>
+<div class="developer_opp rgba-black-strong" onclick="close_opp('Developer')">
+      <ul>
+        <li>Employee relations manager.</li>
+        <li>Senior employment analyst.</li>
+        <li>Human resources director.</li>
+        <li>Management consultant.</li>
+        <li>Financial analyst.</li>
+        <li>Accountant.</li>
+      </ul>
+    </div>
+
+</div>
+<!-- Card --></div>
+</div>
+<div class="row container-fluid carders">
+  <div class="col-lg-4  card_handler"><!-- Card -->
+<div class="card card-image"
+  style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+  <!-- Content -->
+  <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+    <div>
+      <h5 class="pink-text"><i class="fas fa-chart-pie"></i> Job Arena</h5>
+      <h3 class="card-title pt-2"><strong>Accountant</strong></h3>
+      <p>An accountant performs financial functions related to the collection, accuracy, recording, analysis and presentation of a business, organization or company's financial operations.In a smaller business, an accountant's role may consist of primarily financial data collection.</p>
+      <a class="btn btn-pink" onclick="open_opp('Accountant')"><i class="fas fa-clone left"></i> Check Opportunity</a>
+    </div>
+  </div>
+  <div class="accountant_opp rgba-black-strong" onclick="close_opp('Accountant')">
+      <ul>
+        <li>Employee relations manager.</li>
+        <li>Senior employment analyst.</li>
+        <li>Human resources director.</li>
+        <li>Management consultant.</li>
+        <li>Financial analyst.</li>
+        <li>Accountant.</li>
+      </ul>
+    </div>
+
+
+</div>
+<!-- Card --></div>
+  <div class="col-lg-4 card_handler"><!-- Card -->
+<div class="card card-image"
+  style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+
+  <!-- Content -->
+  <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+    <div>
+      <h5 class="pink-text"><i class="fas fa-chart-pie"></i> Job Arena</h5>
+      <h3 class="card-title pt-2"><strong>Secretary</strong></h3>
+      <p>The secretary is responsible for the efficient administration of a company, particularly with regard to ensuring compliance with statutory and regulatory requirements and for ensuring that decisions of the board of directors are implemented.</p>
+      <a class="btn btn-pink" onclick="open_opp('Secretary')"><i class="fas fa-clone left"></i> Check Opportunity</a>
+    </div>
+  </div>
+<div class="secretary_opp rgba-black-strong" onclick="close_opp('Secretary')">
+      <ul>
+        <li>Employee relations manager.</li>
+        <li>Senior employment analyst.</li>
+        <li>Human resources director.</li>
+        <li>Management consultant.</li>
+        <li>Financial analyst.</li>
+        <li>Accountant.</li>
+      </ul>
+    </div>
+
+</div>
+
+<!-- Card --></div>
+</div>
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <script type="text/javascript" src="twitter.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript">
+    var manager = document.querySelector('.manager_opp');
+    var security = document.querySelector('.security_opp');
+    var developer = document.querySelector('.developer_opp');
+    var accountant = document.querySelector('.accountant_opp');
+    var secretary = document.querySelector('.secretary_opp');
+    function open_opp(type) {
+        if (type === 'Manager') {
+          manager.style.display="block";
+        }
+        if (type === 'Developer') {
+          developer.style.display="block";
+        }
+        if (type === 'Security') {
+          security.style.display="block";
+        }
+        if (type === 'Accountant') {
+          accountant.style.display="block";
+        }
+        if (type === 'Secretary') {
+          secretary.style.display="block";
+        }
+    }
+    function close_opp(type) {
+        if (type === 'Manager') {
+          manager.style.display="none";
+        }
+        if (type === 'Developer') {
+          developer.style.display="none";
+        }
+        if (type === 'Security') {
+          security.style.display="none";
+        }
+        if (type === 'Accountant') {
+          accountant.style.display="none";
+        }
+        if (type === 'Secretary') {
+          secretary.style.display="none";
+        }
+    }
+  </script>
+
+</body>
+</html>
